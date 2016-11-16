@@ -1,0 +1,699 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="ES6,学习笔记,javascript,搬运," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.2" />
+
+
+
+
+
+
+<meta name="description" content="ES6核心搬运下">
+<meta property="og:type" content="article">
+<meta property="og:title" content="30分钟学会ES6（下）（搬运）">
+<meta property="og:url" content="https://17jia.github.io/2016/10/31/30分钟学会ES6核心2/index.html">
+<meta property="og:site_name" content="宅窝">
+<meta property="og:description" content="ES6核心搬运下">
+<meta property="og:updated_time" content="2016-10-31T11:08:57.847Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="30分钟学会ES6（下）（搬运）">
+<meta name="twitter:description" content="ES6核心搬运下">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="https://17jia.github.io/2016/10/31/30分钟学会ES6核心2/"/>
+
+
+  <title> 30分钟学会ES6（下）（搬运） | 宅窝 </title>
+</head>
+
+<body itemscope itemtype="//schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">宅窝</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            日志
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="https://jianlipro.github.io" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于我
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                30分钟学会ES6（下）（搬运）
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-10-31T19:48:12+08:00" content="2016-10-31">
+              2016-10-31
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/技术/" itemprop="url" rel="index">
+                    <span itemprop="name">技术</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/10/31/30分钟学会ES6核心2/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/31/30分钟学会ES6核心2/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>ES6核心搬运下<a id="more"></a></p>
+<h1 id="import-export"><a href="#import-export" class="headerlink" title="import export"></a>import export</h1><p>这两个家伙对应的就是es6自己的module功能。</p>
+<p>我们之前写的Javascript一直都没有模块化的体系，无法将一个庞大的js工程拆分成一个个功能相对独立但相互依赖的小工程，再用一种简单的方法把这些小工程连接在一起。</p>
+<p>这有可能导致两个问题：</p>
+<pre><code>一方面js代码变得很臃肿，难以维护
+
+另一方面我们常常得很注意每个script标签在html中的位置，因为它们通常有依赖关系，顺序错了可能就会出bug
+</code></pre><p>在es6之前为解决上面提到的问题，我们得利用第三方提供的一些方案，主要有两种CommonJS(服务器端)和AMD（浏览器端，如require.js）。</p>
+<p>如果想了解更多AMD，尤其是require.js，可以参看这个教程：why modules on the web are useful and the mechanisms that can be used on the web today to enable them</p>
+<p>而现在我们有了es6的module功能，它实现非常简单，可以成为服务器和浏览器通用的模块解决方案。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ES6模块的设计思想，是尽量的静态化，使得编译时就能确定模块的依赖关系，以及输入和输出的变量。CommonJS和AMD模块，都只能在运行时确定这些东西。</div></pre></td></tr></table></figure></p>
+<p>上面的设计思想看不懂也没关系，咱先学会怎么用，等以后用多了、熟练了再去研究它背后的设计思想也不迟！好，那我们就上代码…</p>
+<h2 id="传统的写法"><a href="#传统的写法" class="headerlink" title="传统的写法"></a>传统的写法</h2><p>首先我们回顾下require.js的写法。假设我们有两个js文件: index.js和content.js,现在我们想要在index.js中使用content.js返回的结果，我们要怎么做呢？</p>
+<p>首先定义：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//content.js</span></div><div class="line">define(<span class="string">'content.js'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="keyword">return</span> <span class="string">'A cat'</span>;</div><div class="line">&#125;)</div></pre></td></tr></table></figure></p>
+<p>然后require：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//index.js</span></div><div class="line"><span class="built_in">require</span>([<span class="string">'./content.js'</span>], <span class="function"><span class="keyword">function</span>(<span class="params">animal</span>)</span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(animal);   <span class="comment">//A cat</span></div><div class="line">&#125;)</div></pre></td></tr></table></figure></p>
+<p>那CommonJS是怎么写的呢？<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//index.js</span></div><div class="line"><span class="keyword">var</span> animal = <span class="built_in">require</span>(<span class="string">'./content.js'</span>)</div><div class="line"></div><div class="line"><span class="comment">//content.js</span></div><div class="line"><span class="built_in">module</span>.exports = <span class="string">'A cat'</span></div></pre></td></tr></table></figure></p>
+<h2 id="ES6的写法"><a href="#ES6的写法" class="headerlink" title="ES6的写法"></a>ES6的写法</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//index.js</span></div><div class="line"><span class="keyword">import</span> animal <span class="keyword">from</span> <span class="string">'./content'</span></div><div class="line"></div><div class="line"><span class="comment">//content.js</span></div><div class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="string">'A cat'</span></div></pre></td></tr></table></figure>
+<p>以上我把三者都列出来了，妈妈再也不用担心我写混淆了…</p>
+<h1 id="ES6-module的其他高级用法"><a href="#ES6-module的其他高级用法" class="headerlink" title="ES6 module的其他高级用法"></a>ES6 module的其他高级用法</h1><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//content.js</span></div><div class="line"></div><div class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="string">'A cat'</span>    </div><div class="line"><span class="keyword">export</span> <span class="function"><span class="keyword">function</span> <span class="title">say</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="keyword">return</span> <span class="string">'Hello!'</span></div><div class="line">&#125;    </div><div class="line"><span class="keyword">export</span> <span class="keyword">const</span> type = <span class="string">'dog'</span></div></pre></td></tr></table></figure>
+<p>上面可以看出，export命令除了输出变量，还可以输出函数，甚至是类（react的模块基本都是输出类）<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//index.js</span></div><div class="line"></div><div class="line"><span class="keyword">import</span> &#123; say, type &#125; <span class="keyword">from</span> <span class="string">'./content'</span>  </div><div class="line"><span class="keyword">let</span> says = say()</div><div class="line"><span class="built_in">console</span>.log(<span class="string">`The <span class="subst">$&#123;type&#125;</span> says <span class="subst">$&#123;says&#125;</span>`</span>)  <span class="comment">//The dog says Hello</span></div></pre></td></tr></table></figure></p>
+<p>这里输入的时候要注意：大括号里面的变量名，必须与被导入模块（content.js）对外接口的名称相同。</p>
+<p>如果还希望输入content.js中输出的默认值(default), 可以写在大括号外面。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//index.js</span></div><div class="line"></div><div class="line"><span class="keyword">import</span> animal, &#123; say, type &#125; <span class="keyword">from</span> <span class="string">'./content'</span>  </div><div class="line"><span class="keyword">let</span> says = say()</div><div class="line"><span class="built_in">console</span>.log(<span class="string">`The <span class="subst">$&#123;type&#125;</span> says <span class="subst">$&#123;says&#125;</span> to <span class="subst">$&#123;animal&#125;</span>`</span>)  </div><div class="line"><span class="comment">//The dog says Hello to A cat</span></div></pre></td></tr></table></figure></p>
+<h2 id="修改变量名"><a href="#修改变量名" class="headerlink" title="修改变量名"></a>修改变量名</h2><p>此时我们不喜欢type这个变量名，因为它有可能重名，所以我们需要修改一下它的变量名。在es6中可以用as实现一键换名。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//index.js</span></div><div class="line"></div><div class="line"><span class="keyword">import</span> animal, &#123; say, type <span class="keyword">as</span> animalType &#125; <span class="keyword">from</span> <span class="string">'./content'</span>  </div><div class="line"><span class="keyword">let</span> says = say()</div><div class="line"><span class="built_in">console</span>.log(<span class="string">`The <span class="subst">$&#123;animalType&#125;</span> says <span class="subst">$&#123;says&#125;</span> to <span class="subst">$&#123;animal&#125;</span>`</span>)  </div><div class="line"><span class="comment">//The dog says Hello to A cat</span></div></pre></td></tr></table></figure></p>
+<h2 id="模块的整体加载"><a href="#模块的整体加载" class="headerlink" title="模块的整体加载"></a>模块的整体加载</h2><p>除了指定加载某个输出值，还可以使用整体加载，即用星号（*）指定一个对象，所有输出值都加载在这个对象上面。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//index.js</span></div><div class="line"></div><div class="line"><span class="keyword">import</span> animal, * <span class="keyword">as</span> content <span class="keyword">from</span> <span class="string">'./content'</span>  </div><div class="line"><span class="keyword">let</span> says = content.say()</div><div class="line"><span class="built_in">console</span>.log(<span class="string">`The <span class="subst">$&#123;content.type&#125;</span> says <span class="subst">$&#123;says&#125;</span> to <span class="subst">$&#123;animal&#125;</span>`</span>)  </div><div class="line"><span class="comment">//The dog says Hello to A cat</span></div></pre></td></tr></table></figure></p>
+<p>通常星号*结合as一起使用比较合适。</p>
+<h1 id="终极秘籍"><a href="#终极秘籍" class="headerlink" title="终极秘籍"></a>终极秘籍</h1><p>考虑下面的场景：上面的content.js一共输出了三个变量（default, say, type）,假如我们的实际项目当中只需要用到type这一个变量，其余两个我们暂时不需要。我们可以只输入一个变量：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> &#123; type &#125; <span class="keyword">from</span> <span class="string">'./content'</span></div></pre></td></tr></table></figure></p>
+<p>由于其他两个变量没有被使用，我们希望代码打包的时候也忽略它们，抛弃它们，这样在大项目中可以显著减少文件的体积。</p>
+<p>ES6帮我们实现了！</p>
+<p>不过，目前无论是webpack还是browserify都还不支持这一功能…</p>
+<p>如果你现在就想实现这一功能的话，可以尝试使用rollup.js</p>
+<p>他们把这个功能叫做Tree-shaking，哈哈哈，意思就是打包前让整个文档树抖一抖，把那些并未被依赖或使用的东西统统抖落下去。。。</p>
+<p>看看他们官方的解释吧：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Normally <span class="keyword">if</span> you <span class="built_in">require</span> a <span class="built_in">module</span>, you <span class="keyword">import</span> the whole thing. ES2015 lets you just <span class="keyword">import</span> the bits you need, without mucking around <span class="keyword">with</span> custom builds. It<span class="string">'s a revolution in how we use libraries in JavaScript, and it'</span>s happening right now.</div></pre></td></tr></table></figure></p>
+<p>未完待续</p>
+<p>希望更全面了解es6伙伴们可以去看阮一峰所著的电子书ECMAScript 6入门</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/ES6/" rel="tag">#ES6</a>
+          
+            <a href="/tags/学习笔记/" rel="tag">#学习笔记</a>
+          
+            <a href="/tags/javascript/" rel="tag">#javascript</a>
+          
+            <a href="/tags/搬运/" rel="tag">#搬运</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/10/31/30分钟学会ES6核心/" rel="next" title="30分钟学会ES6（上）（搬运）">
+                <i class="fa fa-chevron-left"></i> 30分钟学会ES6（上）（搬运）
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/11/03/nodeJS/" rel="prev" title="Express 4.x API笔记">
+                Express 4.x API笔记 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/10/31/30分钟学会ES6核心2/"
+           data-title="30分钟学会ES6（下）（搬运）" data-url="https://17jia.github.io/2016/10/31/30分钟学会ES6核心2/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.jpg"
+               alt="李其珈" />
+          <p class="site-author-name" itemprop="name">李其珈</p>
+          <p class="site-description motion-element" itemprop="description">废宅一枚</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">13</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">19</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/896970511" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/17jiapapa" target="_blank" title="微博">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  微博
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#import-export"><span class="nav-number">1.</span> <span class="nav-text">import export</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#传统的写法"><span class="nav-number">1.1.</span> <span class="nav-text">传统的写法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ES6的写法"><span class="nav-number">1.2.</span> <span class="nav-text">ES6的写法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ES6-module的其他高级用法"><span class="nav-number">2.</span> <span class="nav-text">ES6 module的其他高级用法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#修改变量名"><span class="nav-number">2.1.</span> <span class="nav-text">修改变量名</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#模块的整体加载"><span class="nav-number">2.2.</span> <span class="nav-text">模块的整体加载</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#终极秘籍"><span class="nav-number">3.</span> <span class="nav-text">终极秘籍</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">李其珈</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.2"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"17jia"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+    <script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+
+</body>
+</html>
